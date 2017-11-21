@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		span{
+			background-color: yellow;
+			position: relative;
+			bottom: 30px;
+
+		}
+		#ha td span{
+		display:none;
+		}
+		#ha td.subMenuShow span{
+		display:block;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var A = document.getElementsByTagName("td");
+			for (var i=0; i<A.length; i++)
+			{
+				A[i].onmouseover = function(){
+					this.className = "subMenuShow";
+				}
+				A[i].onmouseout = function(){
+					this.className = "";
+				}
+			}
+		}
+	</script>
+
+	<title>小小米家电</title>
+</head>
+<body bgcolor="#DCDCDC">
+
+<table cellspacing="5px" bgcolor="white" id="ha">
+	<tr>
+		<td rowspan="2"><img src="image/1.jpg"><span>小米家电小米家电小米家电小米家电</span></td>   <td><img src="image/2.jpg"><span>小米家电小米家电小米家电小米家电</span></td>   <td><img src="image/3.png"><span>小米家电小米家电小米家电小米家电</span></td>   <td><img src="image/4.jpg"><span>小米家电小米家电小米家电小米家电</span></td>   <td><img src="image/5.jpg"><span>小米家电小米家电小米家电小米家电</span></td>
+	</tr>
+	<tr>
+		   <td><img src="image/6.jpg"><span>小米家电小米家电小米家电小米家电</span></td>   <td><img src="image/7.jpg"><span>小米家电小米家电小米家电小米家电</span></td>   <td><img src="image/8.jpg"><span>小米家电小米家电小米家电小米家电</span></td>   <td><img src="image/9.jpg"><span>小米家电小米家电小米家电小米家电</span></td>
+	</tr>
+
+	
+</table>
+
+</body>
+</html>
